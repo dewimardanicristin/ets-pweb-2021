@@ -1,0 +1,201 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.btn-pink {
+  border: none;
+  font-family: "Josefin Sans";
+  font-weight: semibold;
+  letter-spacing: 0.02em;
+  background: #fb2e86;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+}
+.btn-pink:hover {
+  background: #e62a7b;
+}
+.card-product {
+  width: 19rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
+}
+.card-product:hover {
+  cursor: pointer;
+}
+.card-product:hover .card-details {
+  background: #2f1ac4;
+}
+.card-product img {
+  transition: all 0.3s ease-in-out;
+}
+.card-product:hover img {
+  transform: scale(0.7, 0.7);
+}
+.card-product:hover h3,
+.card-product:hover h4 {
+  color: white;
+}
+.card-image {
+  background: #f6f7fb;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  /* position: relative; */
+}
+.card-product:hover .card-image {
+  background: #f7f7f7;
+}
+.card-details {
+  text-align: center;
+  padding: 1rem 0;
+  transition: all 0.2s ease-in-out;
+}
+.color-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+}
+.color-list .color {
+  height: 0.3rem;
+  width: 1.4rem;
+  margin-right: 0.3rem;
+  border-radius: 12px;
+}
+.color1 {
+  background: #05e6b7;
+}
+.color2 {
+  background: #f701a8;
+}
+.color3 {
+  background: #ffeac1;
+}
+.color4 {
+  background: #fb2e86;
+}
+.color5 {
+  background: #febad7;
+}
+.card-details h3 {
+  color: #151875;
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.card-details h4 {
+  color: #151875;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+.card-actions {
+  position: absolute;
+  top: -10%;
+  left: 3%;
+  transition: all 0.2s ease-in-out;
+}
+.card-product:hover .card-actions {
+  top: 5%;
+}
+.card-actions i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+
+  padding: 0.5rem;
+  color: #1590fc;
+  border-radius: 100%;
+}
+.card-actions i:hover {
+  background: #eeeffb;
+  color: #2f1ac4;
+}
+.btn-green {
+  position: absolute;
+  left: -50%;
+  bottom: 42%;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  background: #08d15f;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+.btn-green:hover {
+  background: #0baf52;
+}
+.card-product:hover .btn-green {
+  left: 33%;
+}
+.products {
+  padding: 7rem 0;
+}
+.product-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.product-links a {
+  font-size: 1.2rem;
+  color: #1a0b5b;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+}
+.product-links-active {
+  text-decoration: underline;
+  color: #fb2e86;
+}
+.card-late-product {
+  width: 25rem;
+  position: relative;
+  overflow: hidden;
+}
+.card-late-actions {
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+.card-late-product:hover .card-late-actions {
+  left: 2%;
+}
+.card-late-actions i {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+
+  padding: 0.5rem;
+  color: #2f1ac4;
+  border-radius: 100%;
+}
+.card-late-actions i:hover {
+  background: #eeeffb;
+}
+.card-late-image {
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+  padding: 3rem;
+}
+.card-late-image:hover {
+  background: white;
+}
+.card-late-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: #151875;
+}
+.discount {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: red;
+}
