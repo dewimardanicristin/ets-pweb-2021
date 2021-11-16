@@ -1,0 +1,19 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.btn-pink {
+  border: none;
+  font-family: "Josefin Sans";
+  font-weight: semibold;
+  letter-spacing: 0.02em;
+  background: #fb2e86;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.btn-pink:hover {
+  background: #e62a7b;
+}
+.card-image {
+  background: #f6f7fb;
+}
