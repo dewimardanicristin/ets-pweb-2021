@@ -1,0 +1,26 @@
+#navbarDarkDropdownMenuLink{
+    color: white;
+    font-weight: 500;
+}
+
+#navbarDarkDropdownMenuLink :hover{
+    color: thistle;
+}
+li{
+    list-style: none;
+}
+
+.container{
+    justify-content: space-between;
+}
+
+.heading_bar{
+    display: flex;
+}
+
+
+h1{
+    font-weight: bold;
+    font-size: 34px;
+}
+
