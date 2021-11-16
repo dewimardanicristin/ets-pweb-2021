@@ -34,7 +34,7 @@
     <!-- NAVBAR -->
     <header>
 		<!-- purple nav -->
-		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7E33E0;">
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7E33E0; font-family: 'Josefin Sans', sans-serif;">
 			<div class="container">
 				<div class="contact" class="px-3">
 					<span style="font-size: 1em; color:white;">
@@ -50,7 +50,7 @@
 					<div class="country">
 						<li class="nav-item dropdown"></li>
 						<a class="link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
+							data-bs-toggle="dropdown" aria-expanded="false" style="color: white; text-decoration: none;">
 							English
 						</a>
 						<!-- <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink"> -->
@@ -62,7 +62,7 @@
 					<div class="currency ms-4">
 						<li class="nav-item dropdown"></li>
 						<a class="link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
+							data-bs-toggle="dropdown" aria-expanded="false" style="color: white; text-decoration: none;">
 							USD
 						</a>
 						<!-- <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink"> -->
@@ -73,15 +73,21 @@
 					</div>
 		
 					<span style="font-size: 1em; color:white;">
-						<strong class="ms-4"style="font-weight: 500;">Login</strong>
-						<i class="far fa-user"></i>
+                        <a href="./html/login.html" style="color: white; text-decoration: none;">
+                            <strong class="ms-4"style="font-weight: 500;">Login</strong>
+                            <i class="far fa-user"></i>
+                        </a>
 					</span>
 					<span style="font-size: 1em; color:white;">
-						<strong class="ms-4"style="font-weight: 500;">Wishlist</strong>
-						<i class="far fa-heart"></i>
+                        <a href="#" style="color: white; text-decoration: none;">
+                            <strong class="ms-4"style="font-weight: 500;">Wishlist</strong>
+						    <i class="far fa-heart"></i>
+                        </a>
 					</span>
 					<span style="font-size: 1em; color:white;">
-						<i class="fas fa-shopping-cart ms-5"></i>
+                        <a href="#" style="color: white; text-decoration: none;">
+                            <i class="fas fa-shopping-cart ms-5"></i>
+                        </a>
 					</span>
 				</div>
 			</div>
@@ -89,12 +95,14 @@
 		<!-- white nav -->
 		<nav class="navbar navbar-expand-lg navbar-light ">
 			<div class="container justify-content-between my-2">
-				<h1 class="me-5" href="#">Hekto</h1>
+				<a href="#" style="color: #0D0E43; text-decoration: none; font-family: 'Josefin Sans', sans-serif;">
+                    <h1 class="me-5">Hekto</h1>
+                </a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: 'Lato', sans-serif;">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#FB2E86">
 							Home
@@ -121,7 +129,7 @@
 					</li>
 				</ul>
 				<form class="d-flex">
-					<input class="form-control me-0" type="search" placeholder="Search" aria-label="Search">
+					<input class="form-control me-0" type="search" aria-label="Search">
 					<button class="btn" type="submit" style="background-color: #FB2E86; color: white;"><i class="fas fa-search"></i></button>
 				</form>
 				</div>
@@ -138,9 +146,9 @@
 				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
-				<div class="carousel-inner" style="height: 75vh;">
+				<div class="carousel-inner" style="height: 80vh;">
 				  <div class="carousel-item active d-flex justify-content-center align-items-center position-relative" style="height: 100%;  background: #F2F0FF;">
-					<img src="./../assets/css/lamp.png" alt="" class="position-absolute top-0" style="left: 3%; height: 330px;">
+					<img src="./../assets/lamp.png" alt="" class="position-absolute top-0" style="left: 3%; height: 330px;">
 					<div class="container-lg" >
 						<div class="row">
 							<div class="col-6 d-flex flex-column justify-content-center">
@@ -187,30 +195,156 @@
 		</section>
 
         <!-- FEATURED PRODUCTS -->
-        <section>
-			<h1 style="font-family: 'Josefin Sans', sans-serif" class="text-center">Featured Products</h1>
-			<div class="container-lg">
-				<div class="row" style="background: purple">
-					<div class="col-3 card-product">
-						<div class="card-image" class="d-flex align-items-center">
-							<img src="./../assets/css/chair1.png" alt="">
+        <section class="products">
+			<h1 style="font-family: 'Josefin Sans', sans-serif; margin-bottom: 4rem; color: #1A0B5B;" class="text-center">Featured Products</h1>
+			<div class="container-lg d-flex justify-content-between mb-5">
+				<div class="card-product">
+					<div class="card-actions">
+						<i class="fas fa-shopping-cart shop-cart"></i>
+						<i class="far fa-heart heart"></i>
+						<i class="fas fa-search-plus search"></i>
+					</div>
+					<div class="card-image">
+						<img src="./../assets/chair1.png" alt="">
+						<button class="btn-green">View Details</button>
+					</div>
+					<div class="card-details">
+						<h3>Cantilever chair</h3>
+						<diV class="color-list">
+							<div class="color color1"></div>
+							<div class="color color2"></div>
+							<div class="color color3"></div>
+						</diV>
+						<h4>Code - Y52301</h4>
+						<h4>$42.00</h4>
+					</div>
+				</div>
+				<div class="card-product">
+					<div class="card-actions">
+						<i class="fas fa-shopping-cart shop-cart"></i>
+						<i class="far fa-heart heart"></i>
+						<i class="fas fa-search-plus search"></i>
+					</div>
+					<div class="card-image">
+						<img src="./../assets/chair2.png" alt="">
+						<button class="btn-green">View Details</button>
+					</div>
+					<div class="card-details">
+						<h3>Cantilever chair</h3>
+						<diV class="color-list">
+							<div class="color color1"></div>
+							<div class="color color2"></div>
+							<div class="color color3"></div>
+						</diV>
+						<h4>Code - Y52301</h4>
+						<h4>$42.00</h4>
+					</div>
+				</div>
+				<div class="card-product">
+					<div class="card-actions">
+						<i class="fas fa-shopping-cart shop-cart"></i>
+						<i class="far fa-heart heart"></i>
+						<i class="fas fa-search-plus search"></i>
+					</div>
+					<div class="card-image">
+						<img src="./../assets/chair3.png" alt="">
+						<button class="btn-green">View Details</button>
+					</div>
+					<div class="card-details">
+						<h3>Cantilever chair</h3>
+						<div class="color-list">
+							<div class="color color1"></div>
+							<div class="color color2"></div>
+							<div class="color color3"></div>
 						</div>
-						<div class="card-details">
-							<h3>Cantilever chair</h3>
-							<diV class="color-list">
-								<div class="color color1"></div>
-								<div class="color color2"></div>
-								<div class="color color3"></div>
-							</diV>
-							<h4>Code - Y52301</h4>
-							<h4>$42.00</h4>
-						</div>
+						<h4>Code - Y52301</h4>
+						<h4>$42.00</h4>
+					</div>
+				</div>
+				<div class="card-product">
+					<div class="card-actions">
+						<i class="fas fa-shopping-cart shop-cart"></i>
+						<i class="far fa-heart heart"></i>
+						<i class="fas fa-search-plus search"></i>
+					</div>
+					<div class="card-image">
+						<img src="./../assets/chair4.png" alt="">
+						<button class="btn-green">View Details</button>
+					</div>
+					<div class="card-details">
+						<h3>Cantilever chair</h3>
+						<diV class="color-list">
+							<div class="color color1"></div>
+							<div class="color color2"></div>
+							<div class="color color3"></div>
+						</diV>
+						<h4>Code - Y52301</h4>
+						<h4>$42.00</h4>
+					</div>
+				</div>		
+			</div>
+			<div class="color-list">
+				<div class="color color4"></div>
+				<div class="color color5"></div>
+				<div class="color color5"></div>
+				<div class="color color5"></div>
+			</div>
+		</section>
+
+        <!-- LATEST PRODUCTS -->
+        <section class="products">
+			<h1 style="font-family: 'Josefin Sans', sans-serif; margin-bottom: 4rem; color: #1A0B5B;" class="text-center">Latest Products</h1>
+			<ul class="product-links">
+				<li><a href="#"><span class="product-links-active">New Arrival</span></a></li>
+				<li><a href="#">Best Seller</a></li>
+				<li><a href="#">Featured</a></li>
+				<li><a href="#">Special Offer</a></li>
+			</ul>
+			<div class="container-lg d-flex justify-content-between mb-5">
+				<div class="card-late-product">
+					<div class="card-late-actions">
+						<i class="fas fa-shopping-cart shop-cart"></i>
+						<i class="far fa-heart heart"></i>
+						<i class="fas fa-search-plus search"></i>
+					</div>
+					<div class="card-late-image">
+						<img src="./../assets/chair5.png" alt="">
+					</div>
+					<div class="card-late-details">
+						<h5>Comfort Handy Craft</h5>
+						<h5>$42.00 <span class="discount">$65.00</span></h5>
+					</div>
+				</div>
+				<div class="card-late-product">
+					<div class="card-late-actions">
+						<i class="fas fa-shopping-cart shop-cart"></i>
+						<i class="far fa-heart heart"></i>
+						<i class="fas fa-search-plus search"></i>
+					</div>
+					<div class="card-late-image">
+						<img src="./../assets/chair6.png" alt="">
+					</div>
+					<div class="card-late-details">
+						<h5>Comfort Handy Craft</h5>
+						<h5>$42.00 <span class="discount">$65.00</span></h5>
+					</div>
+				</div>
+				<div class="card-late-product">
+					<div class="card-late-actions">
+						<i class="fas fa-shopping-cart shop-cart"></i>
+						<i class="far fa-heart heart"></i>
+						<i class="fas fa-search-plus search"></i>
+					</div>
+					<div class="card-late-image">
+						<img src="./../assets/chair7.png" alt="">
+					</div>
+					<div class="card-late-details">
+						<h5>Comfort Handy Craft</h5>
+						<h5>$42.00 <span class="discount">$65.00</span></h5>
 					</div>
 				</div>
 			</div>
 		</section>
-        <!-- LATEST PRODUCTS -->
-        
 	</main>
    
     <!-- Bundle Bootstrap -->

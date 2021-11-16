@@ -7,14 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
-    <!-- fonts -->
+    <!-- FONTS -->
+    <!-- font joseph  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <!-- font joseph  -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:wght@700&display=swap" rel="stylesheet">
     <!-- font lato  -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     
@@ -28,13 +26,18 @@
     <!-- custom css  -->
     <link rel="stylesheet" href="./../assets/css/navbar.css"> 
     <link rel="stylesheet" href="./../assets/css/index.css"> 
+    <link rel="stylesheet" href="./../assets/css/login.css"> 
+
+    <!-- custom js -->
+    <script src="../js/index.js"></script>
+
     <title>Hekto</title>
   </head>
   <body>
     <!-- NAVBAR -->
     <header>
 		<!-- purple nav -->
-		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7E33E0;">
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7E33E0; font-family: 'Josefin Sans', sans-serif;">
 			<div class="container">
 				<div class="contact" class="px-3">
 					<span style="font-size: 1em; color:white;">
@@ -50,7 +53,7 @@
 					<div class="country">
 						<li class="nav-item dropdown"></li>
 						<a class="link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
+							data-bs-toggle="dropdown" aria-expanded="false" style="color: white; text-decoration: none;">
 							English
 						</a>
 						<!-- <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink"> -->
@@ -62,7 +65,7 @@
 					<div class="currency ms-4">
 						<li class="nav-item dropdown"></li>
 						<a class="link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
+							data-bs-toggle="dropdown" aria-expanded="false" style="color: white; text-decoration: none;">
 							USD
 						</a>
 						<!-- <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink"> -->
@@ -73,15 +76,21 @@
 					</div>
 		
 					<span style="font-size: 1em; color:white;">
-						<strong class="ms-4"style="font-weight: 500;">Login</strong>
-						<i class="far fa-user"></i>
+                        <a href="#" style="color: white; text-decoration: none;">
+                            <strong class="ms-4"style="font-weight: 500;">Login</strong>
+                            <i class="far fa-user"></i>
+                        </a>
 					</span>
 					<span style="font-size: 1em; color:white;">
-						<strong class="ms-4"style="font-weight: 500;">Wishlist</strong>
-						<i class="far fa-heart"></i>
+                        <a href="#" style="color: white; text-decoration: none;">
+                            <strong class="ms-4"style="font-weight: 500;">Wishlist</strong>
+						    <i class="far fa-heart"></i>
+                        </a>
 					</span>
 					<span style="font-size: 1em; color:white;">
-						<i class="fas fa-shopping-cart ms-5"></i>
+                        <a href="#" style="color: white; text-decoration: none;">
+                            <i class="fas fa-shopping-cart ms-5"></i>
+                        </a>
 					</span>
 				</div>
 			</div>
@@ -89,12 +98,14 @@
 		<!-- white nav -->
 		<nav class="navbar navbar-expand-lg navbar-light ">
 			<div class="container justify-content-between my-2">
-				<h1 class="me-5" href="#">Hekto</h1>
+                <a href="../index.html" style="color: #0D0E43; text-decoration: none; font-family: 'Josefin Sans', sans-serif;">
+                    <h1 class="me-5">Hekto</h1>
+                </a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: 'Lato', sans-serif;">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#FB2E86">
 							Home
@@ -121,7 +132,7 @@
 					</li>
 				</ul>
 				<form class="d-flex">
-					<input class="form-control me-0" type="search" placeholder="Search" aria-label="Search">
+					<input class="form-control me-0" type="search" aria-label="Search">
 					<button class="btn" type="submit" style="background-color: #FB2E86; color: white;"><i class="fas fa-search"></i></button>
 				</form>
 				</div>
@@ -131,13 +142,85 @@
      <!-- MAIN CONTENT -->
 	<main>
         <!-- ACCOUNT -->
-        <section>
-            <div class="container">
-                
+        <section class="my-account">
+            <div class="container-fluid" style="height: 35vh; background: #F2F0FF; margin-bottom: 4rem;">
+                <div class="container d-flex justify-content-start align-items-center position-relative" style="height: 100%;">
+                    <div class="col-6 d-flex flex-column ">
+                        <h1 style="font-family: 'Josefin Sans', sans-serif; font-weight: bold; font-size: 2.8rem; letter-spacing: 0.015em; margin-bottom: 1rem;">
+                            My Account
+                        </h1>
+                        <div class="row">
+                            <div class="col-1">
+                                <p style="font-family: 'Lato', sans-serif; color: #000000; margin-bottom: 1.5rem;">
+                                    Home</span>
+                                </p>
+                            </div>
+                            <div class="col-1">
+                                <p style="font-family: 'Lato', sans-serif; color: #000000; margin-bottom: 1.5rem;">
+                                    Pages
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <p style="font-family: 'Lato', sans-serif; color: #FB2E86; margin-bottom: 1.5rem;">
+                                    My Account
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- Form -->
-        
+
+        <!-- FORM -->
+        <section class="login-form pt-5">
+			<div class="login-card py-3" style="margin-bottom: 5rem;">
+				<h1 style="font-family: 'Josefin Sans', sans-serif" class="text-center">Login</h1>
+				<p style="font-family: 'Lato', sans-serif; color: #9096B2; margin-bottom: 2rem;" class="text-center">Please login using account detail bellow.</p>
+				<!-- login form -->
+				<div class="form-container">
+					<form 
+						name="form"
+						action=""
+						method="post"
+                        onsubmit="return formValidation()"
+						class="d-flex flex-column">
+						<div>
+							<input
+								type="email"
+								class="form-control mb-4"
+								id="email"
+								placeholder="Email Address"
+								name="email"
+							/>
+						</div>
+						<div>
+							<input
+								type="password"
+								class="form-control mb-3"
+								id="password"
+								placeholder="Password"
+								name="password"
+							/>
+						</div>
+						<div >
+							<p style="font-family: 'Lato', sans-serif; color: #9096B2; margin-bottom: 1.25rem;" >Forgot your password?</p>
+						</div>
+						<button type="submit" class="btn-block btn-pink py-2" >
+							Sign In
+						</button>
+						<div >
+							<p style="font-family: 'Lato', sans-serif; color: #9096B2; margin-top: 1.75rem;" class="text-center">Don't have an Account? Create account</p>
+						</div>
+					</form>
+				</div>
+			</div>
+
+            <!-- partnership -->
+            <div class="d-flex justify-content-center" style="margin-bottom: 5rem;">
+                <img src="./../assets/partnership.png" alt="partnership" class="img-fluid">
+            </div>
+        </section>
 	</main>
    
     <!-- Bundle Bootstrap -->
@@ -145,6 +228,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous">
     </script>
-
   </body>
 </html>
