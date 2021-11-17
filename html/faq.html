@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link
+     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@400;500;700;900&display=swap"
+     rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- font joseph  -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- font lato  -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+   
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <!-- font awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <title>Document</title>
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./../assets/css/navbar.css"> 
     <link rel="stylesheet" href="./../assets/css/faq.css">
+    <title>Hekto</title> 
 </head>
 <body >
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7E33E0;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7E33E0; font-family: 'Josefin Sans', sans-serif;">
         <div class="container">
             <div class="contact" class="px-3">
                 <span style="font-size: 1em; color:white;">
@@ -29,7 +44,7 @@
                 <div class="country">
                     <li class="nav-item dropdown"></li>
                     <a class="link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color: white; text-decoration: none;">
                         English
                     </a>
                     <!-- <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink"> -->
@@ -41,7 +56,7 @@
                 <div class="currency ms-4">
                     <li class="nav-item dropdown"></li>
                     <a class="link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color: white; text-decoration: none;">
                         USD
                     </a>
                     <!-- <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink"> -->
@@ -51,10 +66,12 @@
                     </li>
                 </div>
     
-                <span style="font-size: 1em; color:white;">
-                    <strong class="ms-4"style="font-weight: 500;">Login</strong>
-                    <i class="far fa-user"></i>
-                </span>
+                <a href="./login.html" style="text-decoration:none">
+                    <span style="font-size: 1em; color:white;">
+                        <strong class="ms-4" style="font-weight: 500;">Login</strong>
+                        <i class="far fa-user"></i>
+                    </span>
+                </a>
                 <span style="font-size: 1em; color:white;">
                     <strong class="ms-4"style="font-weight: 500;">Wishlist</strong>
                     <i class="far fa-heart"></i>
@@ -68,12 +85,14 @@
     <!-- <div class="container"> -->
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container justify-content-between my-2">
-              <h1 class="me-5" href="#">Hekto</h1>
+                <a href="../index.html" style="color: #0D0E43; text-decoration: none; font-family: 'Josefin Sans', sans-serif;">
+                    <h1 class="me-5">Hekto</h1>
+                </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: 'Lato', sans-serif;">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#FB2E86">
                           Home
@@ -100,14 +119,14 @@
                   </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-0" type="search" placeholder="Search" aria-label="Search">
+                  <input class="form-control me-0" type="search" aria-label="Search">
                   <button class="btn" type="submit" style="background-color: #FB2E86; color: white;"><i class="fas fa-search"></i></button>
                 </form>
               </div>
             </div>
           </nav>
 
-          <div class="kotak1">
+          <div class="kotak1" style="font-family: 'Josefin Sans', sans-serif;">
             <div class="container" id="container-about">
                 <h1 style="color: #101750;">FAQ</h1>
                 <div class="faq d-flex">
@@ -120,8 +139,8 @@
 
         <div class="container">
             <div class="row my-5 p-5">
-                <div class="col-6 py-2 px-5">
-                    <h1 class="mb-5">Generel Information</h1>
+                <div class="col-6 py-2 px-5" style="font-family: 'Josefin Sans', sans-serif;">
+                    <h1 class="mb-5">General Information</h1>
                     <div class="content mb-5">
                         <h6>Eu dictumst cum at sed euismood condimentum?</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis.</p>
@@ -140,19 +159,19 @@
                     </div>
                 </div>
                 <div class="col-6 p-5" style="background-color: #F3F9FF;">
-                    <h4 class="fw-bold" style="margin-bottom: 90px; color: #151875;">Ask a Question</h4>
-                    <div class="mb-4">
+                    <h4 class="fw-bold" style="margin-bottom: 90px; color: #151875; font-family: 'Josefin Sans', sans-serif;">Ask a Question</h4>
+                    <div class="mb-4" style="font-family: 'Lato', sans-serif;">
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name*">
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-4" style="font-family: 'Lato', sans-serif;">
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject*">
                     </div>
-                    <div class="">
+                    <div class="" style="font-family: 'Lato', sans-serif;"> 
                         <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type Your Message*"
                             rows="8"></textarea>
                     </div>
                     <a href="#">
-                        <button class="px-4 button-submit mt-5" style="border-radius: 5px;">Send Mail</button>
+                        <button class="px-4 button-submit mt-5" style="border-radius: 5px; font-family: 'Josefin Sans', sans-serif;">Send Mail</button>
                     </a>
                 </div>
             </div>
